@@ -1,0 +1,80 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2c2c2c;
+  padding: 15px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #f0f0f0;
+  letter-spacing: 2px;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 1rem;
+  padding: 10px 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+/* Cool Hover Effect */
+.nav-links a::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: #ff4f4f;
+  transition: width 0.3s ease-in-out;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Active Link Styling */
+.active {
+  color: #ff4f4f;
+  font-weight: bold;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
