@@ -19,3 +19,8 @@
 .pp {
   text-align: center;
 }
+.HourStudied {
+  background-color: blue;
+  height: fit-content;
+  height: 10cm;
+}

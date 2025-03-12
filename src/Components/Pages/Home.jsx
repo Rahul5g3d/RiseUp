@@ -11,11 +11,11 @@ const Home = () => {
           is my journey to rise up and achieve what I am destined for.
         </p>
         <div className="quotes-section">
-          Work like hell. You just have to put in 80 to 100 hour weeks every
+          "Work like hell. You just have to put in 80 to 100 hour weeks every
           week. This improves the odds of success. If others are putting in 40
           hour work weeks and you’re putting in 100 hour work weeks, then even
           if you’re doing the same thing, you will achieve in 4 months what it
-          takes them a year.
+          takes them a year."
         </div>
       </div>
       <div className="image-gallery">
@@ -35,28 +35,6 @@ const Home = () => {
           src="https://storage.needpix.com/rsynced_images/accomplish-1136863_1280.jpg"
           alt="Achievement"
         />
-      </div>
-      <div className="content-blocks">
-        <div className="block">
-          Take control of your destiny by setting clear goals.
-        </div>
-        <div className="block">
-          Never give up on your dreams, no matter how hard it gets.
-        </div>
-        <div className="block">
-          Consistency and hard work will lead to success.
-        </div>
-        <div className="block">
-          Every failure is a lesson leading to a greater victory.
-        </div>
-        <div className="block">Believe in yourself and take action today!</div>
-        <div className="block">
-          Your future self will thank you for your efforts now.
-        </div>
-        <div className="block">
-          Surround yourself with positivity and growth-minded people.
-        </div>
-        <div className="block">Stay disciplined and keep moving forward.</div>
       </div>
     </div>
   );

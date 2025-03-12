@@ -1,20 +1,29 @@
-/* Home.css */
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Home Container */
 .home-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(135deg, #2c3e50, #4ca1af);
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
   min-height: 100vh;
   padding: 50px 20px;
-  font-family: "Poppins", sans-serif;
   color: white;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
+/* Content Styling */
 .home-content {
   max-width: 800px;
-  animation: fadeIn 1.5s ease-in-out;
+  margin-bottom: 20px;
 }
 
 .rise-up {
@@ -32,18 +41,16 @@
   margin-bottom: 30px;
 }
 
+/* Quotes Section */
 .quotes-section {
   background: rgba(255, 255, 255, 0.2);
   padding: 20px;
   border-radius: 10px;
   margin: 20px 0;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-blockquote {
-  font-style: italic;
   font-size: 1.2rem;
-  margin: 10px 0;
+  font-style: italic;
+  animation: fadeInn 1.5s ease-in-out;
 }
 
 .image-gallery {
@@ -59,34 +66,13 @@ blockquote {
   height: 200px;
   object-fit: cover;
   border-radius: 10px;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, filter 0.3s ease-in-out;
 }
 
 .image-gallery img:hover {
   transform: scale(1.1);
-}
-
-.content-blocks {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  max-width: 900px;
-  margin-top: 30px;
-}
-
-.block {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 10px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease-in-out;
-}
-
-.block:hover {
-  transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.3);
+  filter: brightness(1.2);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
 }
 
 /* Fade-in animation */
@@ -98,5 +84,48 @@ blockquote {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@keyframes fadeInn {
+  from {
+    opacity: 0;
+    transform: translatey(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
+  .rise-up {
+    font-size: 2.5rem;
+  }
+
+  .motivation {
+    font-size: 1.2rem;
+  }
+
+  .quotes-section {
+    font-size: 1rem;
+  }
+
+  .image-gallery img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .rise-up {
+    font-size: 2rem;
+  }
+
+  .motivation {
+    font-size: 1.1rem;
+  }
+
+  .quotes-section {
+    font-size: 0.9rem;
   }
 }
