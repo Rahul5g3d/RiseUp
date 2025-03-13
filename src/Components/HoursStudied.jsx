@@ -16,7 +16,7 @@ const HoursStudied = ({ Hours, day, Time, What }) => {
       <hr />
       <h2> No. of Hours Worked Today: {Hours}</h2>
       <hr />
-      <h3>Date: {Time}</h3>
+      <h3 class="spfont">Date: {Time}</h3>
       <h4>{What}</h4>
     </div>
   );

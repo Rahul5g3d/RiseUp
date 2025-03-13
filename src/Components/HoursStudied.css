@@ -50,13 +50,6 @@ h2 {
   animation: slideIn 1.2s ease-out; /* Slight delay for h2 */
 }
 
-h3 {
-  font-size: 1.2rem;
-  color: #7f0101;
-  margin: 15px 0;
-  animation: slideIn 1.4s ease-out; /* Slight delay for h3 */
-}
-
 /* Slide-in Animation */
 @keyframes slideIn {
   0% {
@@ -68,7 +61,12 @@ h3 {
     opacity: 1;
   }
 }
-
+.spfont {
+  font-size: 1.2rem;
+  color: #7f0101;
+  margin: 15px 0;
+  animation: slideIn 1.4s ease-out; /* Slight delay for h3 */
+}
 /* Horizontal Rule Styling */
 hr {
   border: 1px solid #f0f0f0;

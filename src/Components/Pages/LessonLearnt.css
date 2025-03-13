@@ -1,3 +1,20 @@
 .container {
-  background: linear-gradient(135deg, #2e3192, #1bffff);
+  background: linear-gradient(135deg, #07094d, #1bffff);
+}
+li {
+  color: bisque;
+  list-style-position: inside;
+}
+.h31 {
+  color: beige;
+  font-family: cursive;
+  animation: identifier 1s ease-in-out;
+}
+@keyframes identifier {
+  0% {
+    transform: scale(1.5rem);
+  }
+  100% {
+    transform: scale(1rem);
+  }
 }
